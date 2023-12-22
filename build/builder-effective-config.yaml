@@ -1,0 +1,32 @@
+directories:
+  output: build
+  buildResources: build
+productName: DOTA
+appId: DOTAZ
+dmg:
+  icon: ./icon/logo.png
+  window:
+    x: 200
+    'y': 150
+    width: 500
+    height: 400
+mac:
+  icon: ./icons/256x256.png
+  target:
+    - dmg
+    - zip
+win:
+  icon: ./icons/256x256.png
+  target:
+    - nsis
+    - zip
+nsis:
+  oneClick: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: icons/icon.ico
+  installerHeaderIcon: icons/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+files: []
+electronVersion: 28.1.0

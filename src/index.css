@@ -1,0 +1,96 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 800px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.logo-area svg {
+  margin-right: 24px;
+}
+
+div.form {
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+input, textarea {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 32px;
+  height: 36px;
+}
+
+.input-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgb(80, 11, 208);
+  border: 1px solid rgb(80, 11, 208);
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+}
+
+button.active {
+  background-color: rgb(4, 138, 33);
+  border: 1px solid rgb(4, 138, 33);
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 16px;
+  margin: 24px auto;
+}
+
+ul {
+  max-height: 600px;
+  overflow: scroll;
+}
+
+ul li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.eye-line {
+  display: flex;
+  align-items: center;
+}
+
+#eye-no {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  cursor: pointer;
+  display: none;
+}
+#eye {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  cursor: pointer;
+}

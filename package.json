@@ -1,0 +1,84 @@
+{
+  "name": "dota1",
+  "productName": "dota1",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "package-win":"electron-packager ./ --platform=win32 --out ./dist  --overwrite  --ignore=node_modules --arch=x64",
+    "buildwin":"electron-builder --win --x64"
+  },
+  "build":{
+    "productName":"DOTA",
+    "appId":"DOTAZ",
+    "directories":{
+        "output":"build"
+    },
+    "dmg":{
+      "icon":"./icon/logo.png",
+      "window":{
+        "x":"200",
+        "y":"150",
+        "width":500,
+        "height":400
+      }
+    },
+    "mac":{
+      "icon":"./icons/256x256.png",
+      "target": [
+          "dmg",
+          "zip"
+        ]
+    },
+    "win": {
+        "icon":"./icons/256x256.png",
+        "target": [
+          "nsis",
+          "zip"
+        ]
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowElevation": true,
+        "allowToChangeInstallationDirectory": true,
+        "installerIcon": "icons/icon.ico",
+        "installerHeaderIcon": "icons/icon.ico",
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true
+     }
+  },
+  "keywords": [],
+  "author": {
+    "name": "Zqs",
+    "email": "18611433407@163.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-wix": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "@electron-forge/plugin-webpack": "^7.2.0",
+    "@vercel/webpack-asset-relocator-loader": "1.7.3",
+    "css-loader": "^6.0.0",
+    "electron": "28.1.0",
+    "electron-builder": "^24.9.1",
+    "node-loader": "^2.0.0",
+    "style-loader": "^3.0.0"
+  },
+  "dependencies": {
+    "@polkadot/api": "^10.11.2",
+    "@polkadot/keyring": "^12.6.2",
+    "@polkadot/util": "^12.6.2",
+    "@polkadot/util-crypto": "^12.6.2",
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
