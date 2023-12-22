@@ -5,7 +5,7 @@ Welcome to the Dot-20 Inscribe Robot, a specialized application designed for mac
 ## Installation
 
 1. **Download the Release:**
-   - Navigate to the [Releases](#link-to-releases) section of this repository.
+   - Navigate to the Releases section of this repository.
    - Download the latest release and unzip the downloaded file to your preferred location.
 
 ## Initial Setup
@@ -26,4 +26,4 @@ Welcome to the Dot-20 Inscribe Robot, a specialized application designed for mac
 
 ## Need Help?
 
-- If you encounter any issues or need assistance, feel free to open an issue in this [repository](#link-to-repository-issues). We're here to help!
+- If you encounter any issues or need assistance, feel free to open an issue in this repository. We're here to help!
